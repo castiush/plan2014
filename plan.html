@@ -1,0 +1,1239 @@
+<html style="height: 100%;"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Deck Title</title>
+
+<meta name="description" content="TODO">
+<meta name="author" content="TODO">
+
+<style>
+.componentContainer {
+    position: absolute;
+    line-height: normal;
+    /*-webkit-transform-origin: 135% 135%;
+    -moz-transform-origin: 135% 135%;
+    transform-origin: 135% 135%;*/
+}
+
+.transformContainer {
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+<link rel="stylesheet" href="plan_archivos/default-reset.css">
+<link href="plan_archivos/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="plan_archivos/default.css" id="theme">
+<link href="plan_archivos/web-fonts.css" rel="stylesheet" type="text/css">
+<link href="plan_archivos/backgroundClasses.css" rel="stylesheet" type="text/css">
+<link href="plan_archivos/surfaceClasses.css" rel="stylesheet" type="text/css">
+
+<link rel="shortcut icon" href="http://strut.io/editor/preview_export/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="http://strut.io/editor/preview_export/apple-touch-icon.png" type="image/png">
+
+<style>
+.reveal.themedArea {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+<script src="plan_archivos/analytics.js" async=""></script><script type="text/javascript" src="plan_archivos/dataset-shim.js"></script>
+<script type="text/javascript" src="plan_archivos/impress.js"></script>
+
+<script src="plan_archivos/onready.js"></script>
+<script src="plan_archivos/loadPresentation.js"></script>
+<script>
+ready(function() {
+    if (document.getElementById('launched-placeholder'))
+        loadPresentation();
+
+    if (!window.presStarted) {
+        startPres(document, window);
+        impress().init();   
+    }
+
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = 
+            "<p>Tap on the left or right to navigate</p>";
+    }
+});
+</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42322531-1', 'strut.io');
+    ga('send', 'pageview');
+    </script>
+</head>
+<body style="height: 100%; overflow: hidden;" class="impress-supported impress-enabled">
+<style type="text/css">
+
+</style>
+<style>
+
+</style>
+<style>
+
+
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+</style>
+<!-- This is a work around / hack to get the user's browser to download the fonts 
+ if they decide to save the presentation. -->
+<div style="visibility: hidden; width: 0px; height: 0px">
+<img src="plan_archivos/Lato-Bold.woff">
+<img src="plan_archivos/HammersmithOne.woff">
+<img src="plan_archivos/Droid-Sans-Mono.woff">
+<img src="plan_archivos/Gorditas-Regular.woff">
+<img src="plan_archivos/FredokaOne-Regular.woff">
+<img src="plan_archivos/Ubuntu.woff">
+<img src="plan_archivos/Ubuntu-Bold.woff">
+<img src="plan_archivos/PressStart2P-Regular.woff">
+<img src="plan_archivos/Lato-BoldItalic.woff">
+<img src="plan_archivos/AbrilFatface-Regular.woff">
+<img src="plan_archivos/Lato-Regular.woff">
+</div>
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div class="bg bg-surf-grad-smoke strut-surface">
+<div class="bg innerBg strut-slide-0 bg-surf-grad-smoke">
+<div style="position: absolute; transform-origin: left top 0px; transition: all 0ms ease-in-out 0ms; transform-style: preserve-3d; top: 50%; left: 50%; transform: perspective(3506.85px) scale(0.285156);" id="impress"><div style="position: absolute; transform-origin: left top 0px; transition: all 0ms ease-in-out 0ms; transform-style: preserve-3d; transform: rotateZ(0deg) rotateY(0deg) rotateX(0deg) translate3d(-2457.6px, -2764.8px, 0px);">
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(2457.6px, 2764.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-1" class="step active present" data-state="strut-slide-0 bg-surf-grad-smoke " data-x="2457.6" data-y="2764.8" data-scale="3">
+			<div class=" slideContainer strut-slide-0" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 215px; left: 90px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 122px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63">Plan de trabajo<br></font><div align="center"><font face="'Ubuntu', sans-serif" color="#045d63"><b>2014</b><br></font></div>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(5625.17px, 2780.16px, 0px) rotateX(0deg) rotateY(179.909deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-2" class="step future" data-state="strut-slide-1 bg-surf-grad-smoke " data-x="5625.173333333333" data-y="2780.16" data-rotate-y="179.90874767107852" data-scale="3">
+			<div class=" slideContainer strut-slide-1" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 256px; left: 36px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63">Adaptar <b><font color="#e6510e">Huayra Linux</font></b></font><font color="#045d63"><br></font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(2498.56px, 5176.32px, 3px) rotateX(0deg) rotateY(0deg) rotateZ(179.909deg) scale(3); transform-style: preserve-3d;" id="step-3" class="step future" data-state="strut-slide-2 bg-surf-grad-smoke " data-x="2498.56" data-y="5176.32" data-rotate-z="179.90874767107852" data-z="3" data-scale="3">
+			<div class=" slideContainer strut-slide-2" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 252px; left: 37px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<div align="left"><font face="'Ubuntu', sans-serif" color="#045d63">A las necesidades de la <font color="#e6510e"><b>provincia</b></font>...</font><br></div>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(5625.17px, 5191.68px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(179.909deg) scale(3); transform-style: preserve-3d;" id="step-4" class="step future" data-state="strut-slide-3 bg-surf-grad-smoke " data-x="5625.173333333333" data-y="5191.68" data-rotate-z="179.90874767107852" data-scale="3">
+			<div class=" slideContainer strut-slide-3" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 260px; left: 368px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63">De cada <font color="#e6510e"><b>nivel</b></font>.<br></font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 421px; left: 31px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 72px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63">(Inicial, primaria...)</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(8806.4px, 2795.52px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-5" class="step future" data-state="strut-slide-4 bg-surf-grad-smoke " data-x="8806.4" data-y="2795.52" data-scale="3">
+			<div class=" slideContainer strut-slide-4" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 246px; left: 57px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63">Y cada <font color="#e6510e"><b>modalidad</b></font>.<br></font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 404px; left: 368px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 72px;" class="antialias">
+<font color="#045d63">(Especial, adultos...)</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(11987.6px, 2795.52px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(359.818deg) scale(1); transform-style: preserve-3d;" id="step-6" class="step future" data-state="strut-slide-5 bg-surf-grad-smoke " data-x="11987.626666666667" data-y="2795.52" data-rotate-z="359.81749534215703">
+			<div class=" slideContainer strut-slide-5" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 256px; left: 339px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 144px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63"><b><font color="#e6510e">¿</font>Cómo<font color="#e6510e">?</font></b></font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(8765.44px, 5237.76px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(179.909deg) scale(3); transform-style: preserve-3d;" id="step-7" class="step future" data-state="strut-slide-6 bg-surf-grad-smoke " data-x="8765.44" data-y="5237.76" data-rotate-z="179.90874767107852" data-scale="3">
+			<div class=" slideContainer strut-slide-6" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 224px; left: 265px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 72px;" class="antialias">
+<ul><li><font color="#045d63"><b><font face="'Ubuntu', sans-serif">Metapaquetes<font color="#e6510e">.</font></font></b></font></li><li><font color="#045d63"><b><font face="'Ubuntu', sans-serif">Documentación<font color="#e6510e">.</font></font></b></font></li><li><font color="#045d63"><b><font face="'Ubuntu', sans-serif">Postinstall<font color="#e6510e">.</font></font></b></font></li><li><font color="#045d63"><b><font face="'Ubuntu', sans-serif">Software propio<font color="#e6510e">.</font><br></font></b></font></li></ul>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(11960.3px, 5237.76px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(179.909deg) scale(3); transform-style: preserve-3d;" id="step-8" class="step future" data-state="strut-slide-7 bg-surf-grad-smoke " data-x="11960.32" data-y="5237.76" data-rotate-z="179.90874767107852" data-scale="3">
+			<div class=" slideContainer strut-slide-7" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 192px; left: 116px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<div align="left"><font face="'Ubuntu', sans-serif"><b><font color="#e6510e">Metapaquetes:</font></b></font><br></div>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 349px; left: 213px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 72px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63">Permiten, en un sólo paso, instalar una serie de programas.</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(15168.9px, 2795.52px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-9" class="step future" data-state="strut-slide-8 bg-surf-grad-smoke " data-x="15168.853333333333" data-y="2795.52" data-scale="3">
+			<div class=" slideContainer strut-slide-8" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 219px; left: 84px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#e6510e"><b>Documentación:</b></font><br>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 377px; left: 165px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 72px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63">Adaptando la aplicación "Huayra primeros pasos" en cada caso.</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(18363.7px, 2826.24px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-10" class="step future" data-state="strut-slide-9 bg-surf-grad-smoke " data-x="18363.733333333334" data-y="2826.24" data-scale="3">
+			<div class=" slideContainer strut-slide-9" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 222px; left: 85px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="'Ubuntu', sans-serif"><font color="#e6510e"><b>Postinstall:</b></font><br></font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 365px; left: 159px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 72px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63">Permite en un sólo paso aplicar una serie de configuraciones.</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(15223.5px, 5268.48px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-11" class="step future" data-state="strut-slide-10 bg-surf-grad-smoke " data-x="15223.466666666667" data-y="5268.48" data-scale="3">
+			<div class=" slideContainer strut-slide-10" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 206px; left: 56px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#e6510e"><b>Software propio:</b></font><br>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 347px; left: 119px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 72px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63">Adaptar software local para hacerlo llegar a todo el país como parte de Huayra Linux.</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(18432px, 5314.56px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-12" class="step future" data-state="strut-slide-11 bg-surf-grad-smoke " data-x="18432" data-y="5314.56" data-scale="3">
+			<div class=" slideContainer strut-slide-11" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 260px; left: 86px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 144px;" class="antialias">
+<b><font face="'Ubuntu', sans-serif"><font color="#e6510e">¿</font><font color="#045d63">El proceso</font><font color="#e6510e">?</font></font></b><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(21572.3px, 2841.6px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-13" class="step future" data-state="strut-slide-12 bg-surf-grad-smoke " data-x="21572.266666666666" data-y="2841.6" data-scale="3">
+			<div class=" slideContainer strut-slide-12" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 252px; left: 36px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font color="#045d63"><font face="'Ubuntu', sans-serif"><b><font color="#e6510e">R</font></b>elevamiento exhaustivo.</font></font><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(21572.3px, 5376px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-14" class="step future" data-state="strut-slide-13 bg-surf-grad-smoke " data-x="21572.266666666666" data-y="5376" data-scale="3">
+			<div class=" slideContainer strut-slide-13" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 224px; left: 38px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63"><b><font color="#e6510e">D</font></b>esarrollo colaborativo y transparente.</font><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(24917.3px, 2918.4px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-15" class="step future" data-state="strut-slide-14 bg-surf-grad-smoke " data-x="24917.333333333332" data-y="2918.4" data-scale="3">
+			<div class=" slideContainer strut-slide-14" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 245px; left: 35px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63"><b><font color="#e6510e">E</font></b>volución y mantenimiento en comunidad.</font><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(28289.7px, 2995.2px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-16" class="step future" data-state="strut-slide-15 bg-surf-grad-smoke " data-x="28289.706666666665" data-y="2995.2" data-scale="3">
+			<div class=" slideContainer strut-slide-15" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 248px; left: 36px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<div align="left"><font face="'Ubuntu', sans-serif" color="#045d63">Colaboración</font><b><font face="'Ubuntu', sans-serif" color="#045d63"> </font></b><b><font face="'Ubuntu', sans-serif" color="#045d63"><font color="#e6510e">+</font></font></b><br><font face="'Ubuntu', sans-serif" color="#045d63">transparencia...</font><br></div>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(24821.8px, 5606.4px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-17" class="step future" data-state="strut-slide-16 bg-surf-grad-smoke " data-x="24821.76" data-y="5606.4" data-scale="3">
+			<div class=" slideContainer strut-slide-16" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 263px; left: 41px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63">Generan un <b><font color="#e6510e">círculo virtuoso</font>.</b></font><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(28289.7px, 5713.92px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-18" class="step future" data-state="strut-slide-17 bg-surf-grad-smoke " data-x="28289.706666666665" data-y="5713.92" data-scale="3">
+			<div class=" slideContainer strut-slide-17" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 241px; left: 75px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 144px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63"><b><font color="#e6510e">¿</font>Un ejemplo<font color="#e6510e">?</font></b></font><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(31566.5px, 2995.2px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-19" class="step future" data-state="strut-slide-18 bg-surf-grad-smoke " data-x="31566.506666666668" data-y="2995.2" data-scale="3">
+			<div class=" slideContainer strut-slide-18" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 288px; left: 127px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63"><font color="#e6510e"><b>E</b></font>ducación especial.</font><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(35130px, 2964.48px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-20" class="step future" data-state="strut-slide-19 bg-surf-grad-smoke " data-x="35130.026666666665" data-y="2964.48" data-scale="3">
+			<div class=" slideContainer strut-slide-19" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 268px; left: 39px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 72px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63">Cada tipo de discapacidad implica <font color="#e6510e"><b>requerimientos distintos</b></font>.</font><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(31552.9px, 5667.84px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-21" class="step future" data-state="strut-slide-20 bg-surf-grad-smoke " data-x="31552.853333333333" data-y="5667.84" data-scale="3">
+			<div class=" slideContainer strut-slide-20" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 184px; left: 37px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 72px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63"><font color="#e6510e"><b>L</b></font>ectores de pantalla, <font color="#e6510e"><b>l</b></font>upas, <font color="#e6510e"><b>a</b></font>lto contraste,</font><font color="#045d63"><font face="'Ubuntu', sans-serif"> </font></font><font face="'Ubuntu', sans-serif" color="#045d63"><font color="#e6510e"><b>i</b></font>mpresoras braile, <font color="#e6510e"><b>e</b></font>stimulación, <font color="#e6510e"><b>s</b></font>implificación del escritorio...</font><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(35116.4px, 5836.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-22" class="step future" data-state="strut-slide-21 bg-surf-grad-smoke " data-x="35116.37333333334" data-y="5836.8" data-scale="3">
+			<div class=" slideContainer strut-slide-21" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 208px; left: 45px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 72px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63">Cada una requiere <font color="#e6510e"><b>horas</b></font> de trabajo con cada netbook para volverla "usable".</font><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(38666.2px, 3056.64px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-23" class="step future" data-state="strut-slide-22 bg-surf-grad-smoke " data-x="38666.24" data-y="3056.64" data-scale="3">
+			<div class=" slideContainer strut-slide-22" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 215px; left: 53px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 72px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63"><font color="#e6510e"><b>M</b></font>ediante las adaptaciones propuestas,<br></font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(38748.2px, 5913.6px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-24" class="step future" data-state="strut-slide-23 bg-surf-grad-smoke " data-x="38748.16" data-y="5913.6" data-scale="3">
+			<div class=" slideContainer strut-slide-23" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 240px; left: 36px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 72px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63">se reducen tiempo y esfuerzo y <font color="#e6510e"><b>se comparte</b></font> lo aprendido.<br></font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(42052.3px, 3118.08px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-25" class="step future" data-state="strut-slide-24 bg-surf-grad-smoke " data-x="42052.26666666667" data-y="3118.08" data-scale="3">
+			<div class=" slideContainer strut-slide-24" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 169px; left: 23px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 72px;" class="antialias">
+<div align="left"><font face="'Ubuntu', sans-serif" color="#045d63">Todos <font color="#e6510e"><b>colaboramos</b></font> en la mejora de una solución <font color="#e6510e"><b>sustentable</b></font> que <font color="#e6510e"><b>evoluciona</b></font> con el tiempo.</font><br></div>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(42147.8px, 5990.4px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-26" class="step future" data-state="strut-slide-25 bg-surf-grad-smoke " data-x="42147.84" data-y="5990.4" data-scale="3">
+			<div class=" slideContainer strut-slide-25" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 201px; left: 115px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 144px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63"><b><font color="#e6510e">¿</font>Con qué contamos<font color="#e6510e">?</font></b></font><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(24712.5px, 9277.44px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-27" class="step future" data-state="strut-slide-26 bg-surf-grad-smoke " data-x="24712.533333333333" data-y="9277.44" data-scale="3">
+			<div class=" slideContainer strut-slide-26" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 252px; left: 45px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 72px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63">Referentes técnicos con años de <font color="#e6510e"><b>experiencia</b></font> en su nivel / modalidad.</font><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(28262.4px, 9369.6px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-28" class="step future" data-state="strut-slide-27 bg-surf-grad-smoke " data-x="28262.4" data-y="9369.6" data-scale="3">
+			<div class=" slideContainer strut-slide-27" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 248px; left: 35px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 72px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63">El trabajo realizado por el equipo que desarrolló <font color="#e6510e"><b>Educadito</b></font> Linux&nbsp; pensado para <font color="#e6510e"><b>especial</b></font> y <font color="#e6510e"><b>primaria</b></font>.</font><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(28330.7px, 12334.1px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-29" class="step future" data-state="strut-slide-28 bg-surf-grad-smoke " data-x="28330.666666666668" data-y="12334.08" data-scale="3">
+			<div class=" slideContainer strut-slide-28" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 275px; left: 36px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 72px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63">La <font color="#e6510e"><b>experiencia</b></font> de equipos que desarrollan distribuciones Linux específicas.</font><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(31976.1px, 9354.24px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-30" class="step future" data-state="strut-slide-29 bg-surf-grad-smoke " data-x="31976.106666666667" data-y="9354.24" data-scale="3">
+			<div class=" slideContainer strut-slide-29" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 237px; left: 32px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 72px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63"><font color="#e6510e"><b>Experiencia</b></font> en el desarrollo de <font color="#e6510e"><b>software libre</b></font> en la provincia.</font><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(31839.6px, 12334.1px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-31" class="step future" data-state="strut-slide-30 bg-surf-grad-smoke " data-x="31839.573333333334" data-y="12334.08" data-scale="3">
+			<div class=" slideContainer strut-slide-30" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 256px; left: 33px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 72px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63">Una <font color="#e6510e"><b>comunidad</b></font> de más de <font color="#e6510e"><b>3.000.000</b></font> de usuarios de las netbook de P.C.I.</font><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(35293.9px, 9507.84px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-32" class="step future" data-state="strut-slide-31 bg-surf-grad-smoke " data-x="35293.86666666667" data-y="9507.84" data-scale="3">
+			<div class=" slideContainer strut-slide-31" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 269px; left: 38px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 72px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63">Un equipo nacional que brinda <font color="#e6510e"><b>soporte técnico</b></font> y <font color="#e6510e"><b>promueve desarrollos</b></font> de este tipo.</font><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(35457.7px, 12549.1px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-33" class="step future" data-state="strut-slide-32 bg-surf-grad-smoke " data-x="35457.706666666665" data-y="12549.12" data-scale="3">
+			<div class=" slideContainer strut-slide-32" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 261px; left: 43px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 72px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63">Una dirección de informática con <font color="#e6510e"><b>cultura</b></font> de software libre.</font><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(24343.9px, 12288px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-34" class="step future" data-state="strut-slide-33 bg-surf-grad-smoke " data-x="24343.893333333333" data-y="12288" data-scale="3">
+			<div class=" slideContainer strut-slide-33" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 249px; left: 98px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 144px;" class="antialias">
+<font color="#045d63"><b><font face="'Ubuntu', sans-serif">Resumiendo<font color="#e6510e">:</font></font></b></font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(132437px, 24268.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-35" class="step future" data-state="strut-slide-34 bg-surf-grad-smoke " data-x="132437.33333333334" data-y="24268.8" data-scale="3">
+			<div class=" slideContainer strut-slide-34" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 344px; left: 38px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63">Un esfuerzo <font color="#e6510e"><b>colaborativo</b></font>,</font><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(136260px, 24268.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-36" class="step future" data-state="strut-slide-35 bg-surf-grad-smoke " data-x="136260.26666666666" data-y="24268.8" data-scale="3">
+			<div class=" slideContainer strut-slide-35" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 301px; left: 29px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63">de Tierra del Fuego <font color="#e6510e"><b>con</b></font> el país</font><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(140083px, 28569.6px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-37" class="step future" data-state="strut-slide-36 bg-surf-grad-smoke " data-x="140083.2" data-y="28569.6" data-scale="3">
+			<div class=" slideContainer strut-slide-36" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 390px; left: 362px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63">para <font color="#e6510e"><b>producir</b></font></font><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(143906px, 28569.6px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-38" class="step future" data-state="strut-slide-37 bg-surf-grad-smoke " data-x="143906.13333333333" data-y="28569.6" data-scale="3">
+			<div class=" slideContainer strut-slide-37" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 258px; left: 42px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63">soluciones <b><font color="#e6510e">sustentables</font></b> y <font color="#e6510e"><b>soberanas</b></font>.</font><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(147729px, 28569.6px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-39" class="step future" data-state="strut-slide-38 bg-surf-grad-smoke " data-x="147729.06666666668" data-y="28569.6" data-scale="3">
+			<div class=" slideContainer strut-slide-38" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 257px; left: 340px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 144px;" class="antialias">
+<b><font face="'Ubuntu', sans-serif" color="#045d63">Gracias<font color="#e6510e">!</font></font></b>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(151552px, 28569.6px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;" id="step-40" class="step future" data-state="strut-slide-39 bg-surf-grad-smoke " data-x="151552" data-y="28569.6" data-scale="3">
+			<div class=" slideContainer strut-slide-39" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 169px; left: 41px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 64px;" class="antialias">
+<font face="'Ubuntu', sans-serif" color="#045d63">Santiago Gil<br>gil.educaciontdf@gmail.com<br></font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 372px; left: 49px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 48px;" class="antialias">
+<div align="left"><font face="'Ubuntu', sans-serif" color="#e6510e">Seguí los avances en <a href="https://github.com/santiagogil">https://github.com/santiagogil</a><br></font></div>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+	<div style="position: absolute; transform: translate(-50%, -50%) translate3d(77004.8px, 15667.2px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(9); transform-style: preserve-3d;" id="overview" class="step future" data-state="strut-slide-overview" data-x="77004.8" data-y="15667.2" data-scale="9"></div>
+	
+</div></div>
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+</div>
+</div></body></html>
